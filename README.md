@@ -1,2 +1,2 @@
-# hipster-grid-system
+# Hipster Grid System
 Grid with flexbox.
