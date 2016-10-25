@@ -1,0 +1,27 @@
+{
+  "name": "hipster-grid-system",
+  "version": "1.0.0",
+  "description": "Grid with flexbox.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erdoganbulut/hipster-grid-system.git"
+  },
+  "keywords": [
+    "hipster",
+    "grid",
+    "system",
+    "hipstergs",
+    "flexbox",
+    "css"
+  ],
+  "author": "erdoganbulut <erdgnblt@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erdoganbulut/hipster-grid-system/issues"
+  },
+  "homepage": "https://github.com/erdoganbulut/hipster-grid-system#readme"
+}
