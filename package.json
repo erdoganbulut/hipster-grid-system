@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/erdoganbulut/hipster-grid-system/issues"
   },
-  "homepage": "https://github.com/erdoganbulut/hipster-grid-system#readme"
+  "homepage": "https://github.com/erdoganbulut/hipster-grid-system#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
