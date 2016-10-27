@@ -59,7 +59,7 @@ sftp-config*
 
 # IDE specific #
 ####################
-idea/
+.idea/
 nbproject/
 
 # Bower specific #
