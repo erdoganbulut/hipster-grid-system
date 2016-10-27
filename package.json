@@ -26,6 +26,7 @@
   "homepage": "https://github.com/erdoganbulut/hipster-grid-system#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.2"
+    "gulp-sass": "^2.3.2",
+    "node-bourbon": "^4.2.8"
   }
 }
