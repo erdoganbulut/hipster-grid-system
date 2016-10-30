@@ -1,0 +1,47 @@
+.hipster-column {
+	@include align-self(auto);
+
+	&.column-halign-start {
+		@include align-self(flex-start);
+	}
+
+	&.column-halign-end {
+		@include align-self(flex-end);
+	}
+
+	&.column-halign-center {
+		@include align-self(flex-center);
+	}
+
+	&.column-halign-baseline {
+		@include align-self(flex-baseline);
+	}
+
+	&.column-halign-stretch {
+		@include align-self(flex-stretch);
+	}
+
+	@for $i from 1 through 100 {
+		&.column-grow-#{$i} {
+			@include flex-grow($i);
+		}
+	}
+
+	@for $i from 1 through 100 {
+		&.column-shrink-#{$i} {
+			@include flex-shrink($i);
+		}
+	}
+
+	@for $i from 1 through 100 {
+		&.column-flex-#{$i} {
+			@include flex($i);
+		}
+	}
+
+	@for $i from 1 through 100 {
+		&.column-order-#{$i} {
+			@include order($i);
+		}
+	}
+}
