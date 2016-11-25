@@ -8,5 +8,5 @@ gulp.task('sass', function () {
             // - or -
             includePaths: require('node-bourbon').includePaths
         }))
-        .pipe(gulp.dest('dist/hipster-grid-system.css'));
+        .pipe(gulp.dest('dist'));
 });
