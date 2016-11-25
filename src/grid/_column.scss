@@ -1,4 +1,4 @@
-.hipster-column {
+.column {
 	@include align-self(auto);
 
 	&.column-halign-start {
@@ -42,6 +42,44 @@
 	@for $i from 1 through 100 {
 		&.column-order-#{$i} {
 			@include order($i);
+		}
+	}
+
+	@for $i from 1 through 12 {
+		@for $j from 1 through $i {
+			.column-xs-#{$j}-#{$i} {
+				width: percentage( ( 100 / $i * $j ) / 100 );
+			}
+		}
+	}
+
+	@for $i from 1 through 12 {
+		@for $j from 1 through $i {
+			.column-sm-#{$j}-#{$i} {
+				@media (min-width: 768px) {
+					width: percentage( ( 100 / $i * $j ) / 100 );
+				}
+			}
+		}
+	}
+
+	@for $i from 1 through 12 {
+		@for $j from 1 through $i {
+			.column-md-#{$j}-#{$i} {
+				@media (min-width: 992px) {
+					width: percentage( ( 100 / $i * $j ) / 100 );
+				}
+			}
+		}
+	}
+
+	@for $i from 1 through 12 {
+		@for $j from 1 through $i {
+			.column-lg-#{$j}-#{$i} {
+				@media (min-width: 1200px) {
+					width: percentage( ( 100 / $i * $j ) / 100 );
+				}
+			}
 		}
 	}
 }
