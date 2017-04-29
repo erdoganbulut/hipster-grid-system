@@ -1,0 +1,24 @@
+.hip-col {
+
+	// ALIGN-SELF SETTINGS
+	@each $value in auto, flex-start, flex-end, center, baseline, stretch {
+		@include make-responsive(hip-row, align-self-#{$value}, true) { align-self: $value; }
+	}
+
+	@for $i from 0 through 100 {
+
+		// FLEX-GROW SETTINGS
+		@include make-responsive(hip-row, flex-grow-#{$i}, true) { flex-grow: $i; }
+
+		// FLEX-SHRINK SETTINGS
+		@include make-responsive(hip-row, flex-shrink-#{$i}, true) { flex-shrink: $i; }
+
+		// FLEX SETTINGS
+		@include make-responsive(hip-row, flex-#{$i}, true) { flex: 0 0 percentage($i / 100); }
+
+		// ORDER SETTINGS
+		@include make-responsive(hip-row, order-#{$i}, true) { order: $i; }
+
+	}
+
+}
