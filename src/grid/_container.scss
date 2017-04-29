@@ -1,0 +1,26 @@
+.hip-container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 100%;
+	@media (min-width: 576px) {
+		width: 540px;
+	}
+	@media (min-width: 768px) {
+		width: 720px;
+	}
+	@media (min-width: 992px) {
+		width: 960px;
+	}
+	@media (min-width: 992px) {
+		width: 1140px;
+	}
+}
+.hip-container-fluid {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 100%;
+}
