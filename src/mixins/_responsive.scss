@@ -1,0 +1,29 @@
+@mixin make-responsive($leftName, $rightName, $isSameLevelClass) {
+	@each $device, $size in (default: auto, sm: 576px, md: 768px, lg: 992px, xl: 1200px) {
+		@if ($device == default) {
+			@if ($isSameLevelClass) {
+				&.#{$leftName}-#{$rightName} {
+					@content;
+				}
+			} @else {
+				.#{$leftName}-#{$rightName} {
+					@content;
+				}
+			}
+		} @else {
+			@if ($isSameLevelClass) {
+				&.#{$leftName}-#{$device}-#{$rightName} {
+					@media (min-width: $size) {
+						@content;
+					}
+				}
+			} @else {
+				.#{$leftName}-#{$device}-#{$rightName} {
+					@media (min-width: $size) {
+						@content;
+					}
+				}
+			}
+		}
+	}
+}
