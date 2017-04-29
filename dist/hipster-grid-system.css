@@ -1,3 +1,29 @@
+.hip-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%; }
+  @media (min-width: 576px) {
+    .hip-container {
+      width: 540px; } }
+  @media (min-width: 768px) {
+    .hip-container {
+      width: 720px; } }
+  @media (min-width: 992px) {
+    .hip-container {
+      width: 960px; } }
+  @media (min-width: 992px) {
+    .hip-container {
+      width: 1140px; } }
+
+.hip-container-fluid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%; }
+
 .hip-row {
   display: -webkit-box;
   display: -ms-flexbox;
