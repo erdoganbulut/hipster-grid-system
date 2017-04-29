@@ -1,0 +1,28 @@
+.hip-row {
+	display: flex;
+
+	// WRAP SETTINGS
+	@each $value in wrap, nowrap, wrap-reverse {
+		@include make-responsive(hip-row, flex-wrap-#{$value}, true) { flex-wrap: $value; }
+	}
+
+	// DIRECTION SETTINGS
+	@each $value in row, column, row-reverse, column-reverse {
+		@include make-responsive(hip-row, flex-direction-#{$value}, true) { flex-direction: $value; }
+	}
+
+	// ALING-ITEMS SETTINGS
+	@each $value in flex-start, flex-end, center, baseline, stretch {
+		@include make-responsive(hip-row, align-items-#{$value}, true) { align-items: $value; }
+	}
+
+	// JUSTIFY-CONTENT SETTINGS
+	@each $value in flex-start, flex-end, center, space-between, space-around {
+		@include make-responsive(hip-row, justify-content-#{$value}, true) { justify-content: $value; }
+	}
+
+	// ALING-CONTENT SETTINGS
+	@each $value in flex-start, flex-end, center, space-between, space-around, stretch {
+		@include make-responsive(hip-row, align-content-#{$value}, true) { align-content: $value; }
+	}
+}
